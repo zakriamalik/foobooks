@@ -8,6 +8,19 @@ class PracticeController extends Controller {
     //
 
 
+public function practice3() {
+
+        $random = new \Rych\Random\Random();
+        $randomBytes = $random->getRandomBytes(16);
+        dump($randomBytes);
+        $randomNumber = $random->getRandomInteger(1,100);
+        dump($randomNumber);
+        $randomString = $random->getRandomString(8);
+        dump($randomString);
+        #return $random->getRandomString(8);
+  }
+
+
 
 public function practice1() {
       dump('This is the first example.');
